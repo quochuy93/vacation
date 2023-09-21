@@ -107,52 +107,127 @@ body {
   background-color: #1bd5c9;
 }
 
-.navbar1 {
-  width: 100%;
-  height: 5rem;
+:root {
+  --nav-height: 3rem;
+}
+
+.navbar {
   background-color: black;
-  padding: 1rem 20rem;
+  height: 6rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 0.5rem;
+  margin: 0;
 }
-.navbar1-title {
-  padding-top: 0.5rem;
+.navbar .nav {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  line-height: 5.6rem;
+  text-transform: capitalize;
+  letter-spacing: 1.25px;
 }
-.navbar1-button {
+.navbar .nav a {
+  color: white;
+}
+.navbar .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar .left .lower {
+  text-transform: none;
+}
+.navbar .left .special1 {
+  height: 3rem;
+  border-bottom: 4px solid black;
+}
+.navbar .left .special2 {
   text-transform: uppercase;
+  border-bottom: 4px solid black;
+  line-height: 3rem;
+  padding: 0.5rem;
+}
+.navbar .left .special2 a .fa-angles-right {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.navbar .left .special2:hover {
+  background-color: rgba(211, 215, 220, 0.511);
+  opacity: 85%;
+  border-radius: 7px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.navbar .left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+}
+.navbar .left ul .special3 {
+  border-bottom: 4px solid red;
   font-weight: 500;
+  opacity: 85%;
 }
-.navbar1-button-detail1 {
-  display: inline-block;
-  color: green;
-  text-align: center;
-  border: 3px solid green;
-  border-radius: 4px;
-  width: 7rem;
-  height: 3.5rem;
-  line-height: 3rem;
+.navbar .left ul .special4 {
+  border-bottom: 4px solid black;
 }
-.navbar1-button-detail1:hover {
+.navbar .left ul .special4:hover {
+  border-bottom: 4px solid red;
+  opacity: 85%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.navbar .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.navbar .right .special5 {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 1rem 1rem;
+}
+.navbar .right .special5:hover {
+  background-color: rgba(211, 215, 220, 0.656);
+  opacity: 85%;
+  border-radius: 7px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
-.navbar1-button-detail2:hover {
-  display: inline-block;
-  text-align: center;
-  border: 3px solid white;
-  border-radius: 4px;
-  height: 3.5rem;
-  line-height: 3rem;
-  padding: 0 1rem;
-  cursor: pointer;
+.navbar .right .special6 button {
+  background-color: transparent;
+  border: 2px solid white;
+  line-height: 2rem;
+  margin: 1rem 0rem;
+  padding: 0.1rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navbar .right .special6 button:hover {
+  -webkit-box-shadow: rgb(17, 17, 17) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 3px;
+          box-shadow: rgb(17, 17, 17) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer {
@@ -177,4 +252,40 @@ body {
 }
 .footer-social i {
   color: white;
+}
+
+.banner {
+  position: relative;
+}
+.banner-image {
+  width: 100%;
+  height: 55rem;
+}
+.banner-information {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 39%;
+  left: 22%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.banner-information img {
+  width: 15rem;
+}
+.banner-information h1 {
+  color: white;
+  font-size: 5.5rem;
+  padding-top: 2rem;
 }

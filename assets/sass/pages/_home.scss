@@ -1,1 +1,42 @@
+.banner{position: relative;
+    &-image{width: 100%;
+        height: 55rem;
 
+    }
+
+    &-information{position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 39%;
+        left: 22%;
+        transform: translateY(-50%);
+        
+        img{width: 15rem;
+            
+        }
+
+        h1{color: white;
+            font-size: 5.5rem;
+            padding-top: 2rem;
+
+        }
+
+        h3{
+
+        }
+
+        .banner-information-search{
+
+        }
+
+        .search{
+
+        }
+
+        p{
+
+        }
+    }
+}
