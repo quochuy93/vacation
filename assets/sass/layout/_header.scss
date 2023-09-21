@@ -1,0 +1,48 @@
+.slider {
+    width: 100%;
+    .carousel-inner .carousel-item img {
+        height: 70rem;
+    }
+    .carousel-caption {
+        text-align: start;
+        padding-bottom: 25rem;
+        h5 {
+            font-size: 3rem;
+            line-height: 4rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 3rem;
+            padding: 2rem 0;
+            padding-right: 50rem;
+            font-weight: lighter;
+        }
+        .banner-button-left {
+            background-color: transparent;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            border: 2px solid white;
+            margin-right: 5px;
+            &:hover {
+                background-color: #1bd5c9;
+            }
+        }
+
+        .banner-button-right {
+            background-color: transparent;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            border: 2px solid white;
+            &:hover {
+                background-color: #1bd5c9;
+            }
+        }
+    }
+}

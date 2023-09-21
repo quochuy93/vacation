@@ -1,0 +1,18 @@
+.footer {
+    background-color: #5c5c5c;
+    padding: 2rem 22.5rem;
+    display: flex;
+    justify-content: space-between;
+    p {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    &-social {
+        display: flex;
+        gap: 1.5rem;
+        & i {
+            color: white;
+        }
+    }
+}
