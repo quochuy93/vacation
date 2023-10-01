@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --header-h: 4.7rem;
@@ -33,13 +34,20 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: font_back_up;
+  src: url(./font1.woff2) format("woff2"), url(./font2.woff2) format("woff2"), url(./font3.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
 * {
-  font-family: Verdana, sans-serif;
+  font-family: "Roboto", Helvetica, "font_back_up", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", Helvetica, "font_back_up", sans-serif;
 }
 
 body {
