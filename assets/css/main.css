@@ -150,6 +150,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
 }
 .navbar .left .lower {
   text-transform: none;
@@ -182,7 +183,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 .navbar .left ul .special3 {
   border-bottom: 4px solid red;
@@ -228,7 +229,7 @@ body {
   margin: 1rem 0rem;
   padding: 0.1rem 1rem;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 .navbar .right .special6 button:hover {
@@ -284,16 +285,62 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 39%;
-  left: 22%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  text-align: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 0 42rem;
 }
 .banner-information img {
   width: 15rem;
 }
 .banner-information h1 {
   color: white;
-  font-size: 5.5rem;
+  font-size: 6rem;
   padding-top: 2rem;
+  font-weight: 600;
+}
+.banner-information h3 {
+  color: white;
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+.banner-information .banner-information-search {
+  padding: 2.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner-information .banner-information-search .space {
+  width: 57rem;
+  height: 5rem;
+  padding: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+.banner-information .banner-information-search .search {
+  width: 9rem;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  background-color: #ce2927;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.banner-information .banner-information-search .search:hover {
+  background-color: rgb(185, 37, 35);
+}
+.banner-information p {
+  padding-top: 5rem;
+}
+.banner-information p a {
+  color: white;
+  font-size: 1.4rem;
+}
+.banner-information p a span {
+  font-weight: 600;
 }
