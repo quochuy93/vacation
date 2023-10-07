@@ -55,11 +55,42 @@
       defer
     ></script>
 
+    <!-- OWL carousel2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JQuery has to be above the Javascript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <!-- <script src="./main.js"></script> -->
   </head>
 
   <body>
-    <div id="screen" class="screen">
+    <div id="home" class="home">
       <div class="navbar">
         <div class="left">
           <a href="!#"
@@ -81,7 +112,9 @@
           </div>
           <ul>
             <li class="nav special3"><a href="./index.html">Home</a></li>
-            <li class="nav special4"><a href="./vacation.html">Vacations</a></li>
+            <li class="nav special4">
+              <a href="./vacation.html">Vacations</a>
+            </li>
             <li class="nav special4"><a href="!#">Travel Guides</a></li>
             <li class="nav lower special4">
               <a href="!#">Tours and Attractions</a>
@@ -133,10 +166,10 @@
             /></label>
             <button class="search">search</button>
           </form>
-          <p><a href="!#">Photo of: <span>Bali, Indonesia</span></a></p>
+          <p>
+            <a href="!#">Photo of: <span>Bali, Indonesia</span></a>
+          </p>
         </div>
-        
-        
       </div>
 
       <div class="body">
@@ -190,149 +223,262 @@
 
         <div class="advice">
           <div class="advice-top">
-            <h2>travel advice</h2>
-            <a href="!#"><p>see all travel advice <i class="fa-solid fa-angles-right"></i></p></a>
+            <h2 class="title">travel advice</h2>
+            <a href="!#"
+              ><p>
+                see all travel advice
+                <i class="fa-solid fa-angles-right"></i></p
+            ></a>
           </div>
 
           <div class="advice-body">
-            <a href="!#"
-              ><div class="advice-body-image">
-                <img
-                  src="./assets/images/home/advice/advice1.jpg"
-                  alt="advice1"
-                />
-                <p>18 Fall Family Vacation Ideas</p>
-              </div></a
-            >
-            <a href="!#"
-              ><div class="advice-body-image">
-                <img
-                  src="./assets/images/home/advice/advice2.jpg"
-                  alt="advice2"
-                />
-                <p>30 Fun Fall Weekend Getaways for 2023</p>
-              </div></a
-            >
-            <a href="!#"
-              ><div class="advice-body-image">
-                <img
-                  src="./assets/images/home/advice/advice3.jpg"
-                  alt="advice3"
-                />
-                <p>The 32 Best Dog-Friendly Beaches in the U.S.</p>
-              </div></a
-            >
-            <a href="!#"
-              ><div class="advice-body-image">
-                <img
-                  src="./assets/images/home/advice/advice4.jpg"
-                  alt="advice4"
-                />
-                <p>18 Fall Family Vacation Ideas</p>
-              </div></a
-            >
-            <a href="!#"
-              ><div class="advice-body-image hidden">
-                <img
-                  src="./assets/images/home/advice/advice4.jpg"
-                  alt="advice4"
-                />
-                <p>The 26 Best Zoos in the U.S.</p>
-              </div></a
-            >
-            <a href="!#"
-              ><div class="advice-body-image">
-                <img
-                  src="./assets/images/home/advice/advice5.jpg"
-                  alt="advice5"
-                />
-                <p>18 historical places.</p>
-              </div></a
-            >
+            <div class="advice-body-left">
+              <a href="!#"
+                ><div class="image">
+                  <img
+                    class="left1"
+                    src="./assets/images/home/advice/advice1.jpg"
+                    alt="advice1"
+                  />
+                  <p class="description1">18 Fall Family Vacation Ideas</p>
+                </div></a
+              >
+              <a href="!#"
+                ><div class="image">
+                  <img
+                    class="left2"
+                    src="./assets/images/home/advice/advice4.jpg"
+                    alt="advice2"
+                  />
+                  <p class="description2">
+                    30 Fun Fall Weekend Getaways for 2023
+                  </p>
+                </div></a
+              >
+            </div>
+            <div class="advice-body-right">
+              <div class="firstLine">
+                <a href="!#"
+                  ><div class="image">
+                    <img
+                      src="./assets/images/home/advice/advice2.jpg"
+                      alt="advice3"
+                    />
+                    <p class="description2">
+                      The 32 Best Dog-Friendly Beaches in the U.S.
+                    </p>
+                  </div></a
+                >
+                <a href="!#"
+                  ><div class="image">
+                    <img
+                      src="./assets/images/home/advice/advice3.jpg"
+                      alt="advice4"
+                    />
+                    <p class="description2">18 Fall Family Vacation Ideas</p>
+                  </div></a
+                >
+              </div>
+              <div class="secondLine">
+                <a href="!#"
+                  ><div class="image hidden">
+                    <img
+                      src="./assets/images/home/advice/advice5.jpg"
+                      alt="advice4"
+                    />
+                    <p class="description2">The 26 Best Zoos in the U.S.</p>
+                  </div></a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="line"></div>
 
         <div class="go">
-          <h2>Where Do You Want To Go?</h2>
-          <div class="go-body">
-            <a href="!#"
-              ><div class="go-body-image">
-                <img src="./assets/images/home/to_go/go1.jpg" alt="go1" />
-                <div class="word">Paris</div>
-              </div></a
-            >
+          <h2 class="title">Where Do You Want To Go?</h2>
 
-            <a href="!#"
-              ><div class="go-body-image">
-                <img src="./assets/images/home/to_go/go2.jpg" alt="go2" />
-                <div class="word">Yellowstone</div>
-              </div></a
-            >
-
-            <a href="!#"
-              ><div class="go-body-image">
-                <img src="./assets/images/home/to_go/go3.jpg" alt="go3" />
-                <div class="word">Rome</div>
-              </div></a
-            >
-
-            <a href="!#"
-              ><div class="go-body-image">
-                <img src="./assets/images/home/to_go/go4.jpg" alt="go4" />
-                <div class="word">Tahiti</div>
-              </div></a
-            >
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/go1.jpg" alt="go1" />
+                  <div class="word">Paris</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/go2.jpg" alt="go2" />
+                  <div class="word">Yellowstone</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/go3.jpg" alt="go3" />
+                  <div class="word">Rome</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/go4.jpg" alt="go4" />
+                  <div class="word">Tahiti</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/london.jpg"
+                    alt="London"
+                  />
+                  <div class="word">London</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/amalfi.jpg"
+                    alt="Amalfi"
+                  />
+                  <div class="word">Amalfi</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/dubai.jpg" alt="Dubai" />
+                  <div class="word">Dubai</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/grand_canyon.jpg"
+                    alt="Grand_Canyon"
+                  />
+                  <div class="word">Grand Canyon</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/maldives.jpg"
+                    alt="maldives"
+                  />
+                  <div class="word">Maldives</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img src="./assets/images/home/to_go/maui.jpg" alt="Maui" />
+                  <div class="word">Maui</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/newyork.jpg"
+                    alt="Newyork"
+                  />
+                  <div class="word">Newyork</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/phuket.jpg"
+                    alt="Phuket"
+                  />
+                  <div class="word">Phuket</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/rio_de_janero.jpg"
+                    alt="Rio_De_Janero"
+                  />
+                  <div class="word">Rio De Janero</div>
+                </div></a
+              >
+            </div>
+            <div class="item">
+              <a href="!#"
+                ><div class="go-body-image">
+                  <img
+                    src="./assets/images/home/to_go/satorini.jpg"
+                    alt="Satorini"
+                  />
+                  <div class="word">Satorini</div>
+                </div></a
+              >
+            </div>
           </div>
         </div>
 
         <div class="line"></div>
 
         <div class="rank">
-          <h2>popular rankings</h2>
+          <h2 class="title">popular rankings</h2>
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img src="./assets/images/home/rank/rank1.jpg" alt="USA" />
-                <div class="description">USA</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank1.jpg" alt="USA" />
+              <div class="description">USA</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Places to Visit in the USA</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Glacier National Park</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Glacier National Park</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#2</span>
-                  <p>Maui</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#2</span>
+                <p>Maui</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#3</span>
-                  <p>Grand Canyon National Park</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#3</span>
+                <p>Grand Canyon National Park</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
-              <a href="!#"
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
+              <a class="rank_hotel" href="!#"
                 ><i class="fa-solid fa-bed"></i> Best Hotels in the USA</a
               >
             </div>
@@ -350,47 +496,41 @@
           <div class="line2"></div>
 
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img src="./assets/images/home/rank/rank2.jpg" alt="Canada" />
-                <div class="description">Canada</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank2.jpg" alt="Canada" />
+              <div class="description">Canada</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Places to Visit in Canada</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Banff</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Banff</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#2</span>
-                  <p>Jasper National Park</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#2</span>
+                <p>Jasper National Park</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#3</span>
-                  <p>Vancouver, Canada</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#3</span>
+                <p>Vancouver, Canada</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
-              <a href="!#"
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
+              <a class="rank_hotel" href="!#"
                 ><i class="fa-solid fa-bed"></i> Best Hotels in the Canada</a
               >
             </div>
@@ -405,50 +545,41 @@
           <div class="line2"></div>
 
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img
-                  src="./assets/images/home/rank/rank3.jpg"
-                  alt="Caribbean"
-                />
-                <div class="description">Caribbean</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank3.jpg" alt="Caribbean" />
+              <div class="description">Caribbean</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Places to Visit in the Caribbean</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Turks & Caicos</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Turks & Caicos</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#2</span>
-                  <p>St. Lucia</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#2</span>
+                <p>St. Lucia</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#3</span>
-                  <p>British Virgin Islands</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#3</span>
+                <p>British Virgin Islands</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
-              <a href="!#"
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
+              <a class="rank_hotel" href="!#"
                 ><i class="fa-solid fa-bed"></i> Best Hotels in the Caribbean</a
               >
             </div>
@@ -465,47 +596,41 @@
           <div class="line2"></div>
 
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img src="./assets/images/home/rank/rank4.jpg" alt="Europe" />
-                <div class="description">Europe</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank4.jpg" alt="Europe" />
+              <div class="description">Europe</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Places to Visit in Europe</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Paris</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Paris</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#2</span>
-                  <p>Rome</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#2</span>
+                <p>Rome</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#3</span>
-                  <p>Swiss Alps</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#3</span>
+                <p>Swiss Alps</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
-              <a href="!#"
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
+              <a class="rank_hotel" href="!#"
                 ><i class="fa-solid fa-bed"></i> Best Hotels in Europe</a
               >
             </div>
@@ -522,47 +647,41 @@
           <div class="line2"></div>
 
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img src="./assets/images/home/rank/rank5.jpg" alt="Mexico" />
-                <div class="description">Mexico</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank5.jpg" alt="Mexico" />
+              <div class="description">Mexico</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Places to Visit in Mexico</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Zihuatanejo</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Zihuatanejo</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#2</span>
-                  <p>Tulum</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#2</span>
+                <p>Tulum</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#3</span>
-                  <p>Cozumel</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#3</span>
+                <p>Cozumel</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
-              <a href="!#"
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
+              <a class="rank_hotel" href="!#"
                 ><i class="fa-solid fa-bed"></i> Best Hotels in Mexico</a
               >
             </div>
@@ -576,46 +695,40 @@
           <div class="line2"></div>
 
           <div class="rank-detail">
-            <a href="!#"
-              ><div class="rank-detail-image">
-                <img src="./assets/images/home/rank/rank6.jpg" alt="Cruise" />
-                <div class="description">Cruise</div>
-              </div>
+            <a class="rank-detail-image" href="!#">
+              <img src="./assets/images/home/rank/rank6.jpg" alt="Cruise" />
+              <div class="description">Cruise</div>
             </a>
             <div class="rank-detail-best">
               <h3>Best Luxury Cruise Lines</h3>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-color.png"
-                    alt="gold badge"
-                  />
-                  <span>#1</span>
-                  <p>Viking Ocean Cruises</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-color.png"
+                  alt="gold badge"
+                />
+                <span>#1</span>
+                <p>Viking Ocean Cruises</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-silver.png"
-                    alt="silver badge"
-                  />
-                  <span>#2</span>
-                  <p>Seabourn Cruise Line</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-silver.png"
+                  alt="silver badge"
+                />
+                <span>#2</span>
+                <p>Seabourn Cruise Line</p>
               </a>
-              <a href="!#"
-                ><div class="suggestion">
-                  <img
-                    src="./assets/images/header/mini-badge-silver.png"
-                    alt="silver badge"
-                  />
-                  <span>#3</span>
-                  <p>Regent Seven Seas Cruises</p>
-                </div>
+              <a href="!#">
+                <img
+                  src="./assets/images/header/mini-badge-silver.png"
+                  alt="silver badge"
+                />
+                <span>#3</span>
+                <p>Regent Seven Seas Cruises</p>
               </a>
 
-              <a href="!#">See Full Ranking List <i class="fa-solid fa-angles-right"></i></a>
+              <a class="rank_list" href="!#"
+                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+              ></a>
             </div>
 
             <div class="rank-detail-more">
@@ -628,84 +741,78 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="bottom">
+        If you make a purchase from our site, we may earn a commission. This
+        does not affect the quality or independence of our editorial content.
+      </div>
 
-        <div class="bottom">
-          If you make a purchase from our site, we may earn a commission. This
-          does not affect the quality or independence of our editorial content.
+      <div class="link">
+        <div class="link-detail">
+          <a href="!#"><h3>Vacation Destinations</h3></a>
+          <ul>
+            <a href="!#"><li class="link-detail-word">World's Best</li></a>
+            <a href="!#"><li class="link-detail-word">USA</li></a>
+            <a href="!#"><li class="link-detail-word">Mexico</li></a>
+            <a href="!#"><li class="link-detail-word">Caribbean</li></a>
+            <a href="!#"
+              ><li class="link-detail-word">Central & South America</li></a
+            >
+            <a href="!#"><li class="link-detail-word">Europe</li></a>
+          </ul>
         </div>
 
-        <div class="link">
-          <div class="link-detail">
-            <a href="!#"><h3>Vacation Destinations</h3></a>
-            <ul>
-              <a href="!#"><li class="link-detail-word">World's Best</li></a>
-              <a href="!#"><li class="link-detail-word">USA</li></a>
-              <a href="!#"><li class="link-detail-word">Mexico</li></a>
-              <a href="!#"><li class="link-detail-word">Caribbean</li></a>
-              <a href="!#"
-                ><li class="link-detail-word">Central & South America</li></a
-              >
-              <a href="!#"><li class="link-detail-word">Europe</li></a>
-            </ul>
-          </div>
+        <div class="link-detail">
+          <a href="!#"><h3>hotels</h3></a>
+          <ul>
+            <a href="!#"><li class="link-detail-word">USA Hotels</li></a>
+            <a href="!#"><li class="link-detail-word">Caribbean Hotels</li></a>
+            <a href="!#"><li class="link-detail-word">Mexico Hotels</li></a>
+            <a href="!#"><li class="link-detail-word">Canada Hotels</li></a>
+            <a href="!#"><li class="link-detail-word">Europe Hotels</li></a>
+            <a href="!#"><li class="link-detail-word">Hotels by Brand</li></a>
+          </ul>
+        </div>
 
-          <div class="link-detail">
-            <a href="!#"><h3>hotels</h3></a>
-            <ul>
-              <a href="!#"><li class="link-detail-word">USA Hotels</li></a>
-              <a href="!#"
-                ><li class="link-detail-word">Caribbean Hotels</li></a
-              >
-              <a href="!#"><li class="link-detail-word">Mexico Hotels</li></a>
-              <a href="!#"><li class="link-detail-word">Canada Hotels</li></a>
-              <a href="!#"><li class="link-detail-word">Europe Hotels</li></a>
-              <a href="!#"><li class="link-detail-word">Hotels by Brand</li></a>
-            </ul>
-          </div>
+        <div class="link-detail">
+          <a href="!#"><h3>Cruises</h3></a>
+          <ul>
+            <a href="!#"><li class="link-detail-word">Best Cruise Lines</li></a>
+            <a href="!#"
+              ><li class="link-detail-word">Cruises for the Money</li></a
+            >
+            <a href="!#"
+              ><li class="link-detail-word">Cruises for Families</li></a
+            >
+            <a href="!#"
+              ><li class="link-detail-word">Cruises for Couples</li></a
+            >
+            <a href="!#"
+              ><li class="link-detail-word">Cruises in the Caribbean</li></a
+            >
+            <a href="!#"><li class="link-detail-word">Best Cruise Ships</li></a>
+          </ul>
+        </div>
 
-          <div class="link-detail">
-            <a href="!#"><h3>Cruises</h3></a>
-            <ul>
-              <a href="!#"
-                ><li class="link-detail-word">Best Cruise Lines</li></a
-              >
-              <a href="!#"
-                ><li class="link-detail-word">Cruises for the Money</li></a
-              >
-              <a href="!#"
-                ><li class="link-detail-word">Cruises for Families</li></a
-              >
-              <a href="!#"
-                ><li class="link-detail-word">Cruises for Couples</li></a
-              >
-              <a href="!#"
-                ><li class="link-detail-word">Cruises in the Caribbean</li></a
-              >
-              <a href="!#"
-                ><li class="link-detail-word">Best Cruise Ships</li></a
-              >
-            </ul>
-          </div>
-
-          <div class="link-detail">
-            <a href="!#"><h3>Rewards</h3></a>
-            <ul>
-              <a href="!#"><li class="link-detail-word">Hotel Rewards</li></a>
-              <a href="!#"><li class="link-detail-word">Airline Rewards</li></a>
-            </ul>
-            <a href="!#"><h3>Travel Guides</h3></a>
-            <a href="!#"><h3>Tours And Attractions</h3></a>
-            <a href="!#"><h3>Advice</h3></a>
-            <a href="!#">Luggage</a>
-            <div class="follow">
-              <p>Follow <span>@USNewsTravel</span></p>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
+        <div class="link-detail">
+          <a href="!#"><h3>Rewards</h3></a>
+          <ul>
+            <a href="!#"><li class="link-detail-word">Hotel Rewards</li></a>
+            <a href="!#"><li class="link-detail-word">Airline Rewards</li></a>
+          </ul>
+          <a href="!#"><h3>Travel Guides</h3></a>
+          <a href="!#"><h3>Tours And Attractions</h3></a>
+          <a href="!#"><h3>Advice</h3></a>
+          <ul>
+            <a href="!#"><li class="link-detail-word">Luggage</li></a>
+          </ul>
+          <div class="follow">
+            <p>Follow <span>@USNewsTravel</span></p>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
           </div>
         </div>
       </div>
-
       <div class="line3"></div>
 
       <div class="footer">
@@ -738,14 +845,34 @@
         </div>
 
         <div class="footer-symbol">
-          <div class="footer-symbol-social">
-            <i class="fa-brands fa-facebook-f"></i>
-          </div>
-          <div class="footer-symbol-social">
-            <i class="fa-brands fa-twitter"></i>
-          </div>
+          <i class="fa-brands fa-facebook-f"></i>
+
+          <i class="fa-brands fa-twitter"></i>
         </div>
       </div>
     </div>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        stagePadding: 50,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          740: {
+            items: 3,
+          },
+          1024: {
+            items: 4,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
