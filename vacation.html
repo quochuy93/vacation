@@ -55,7 +55,38 @@
       defer
     ></script>
 
+    <!-- OWL carousel2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JQuery has to be above the Javascript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <!-- <script src="./main.js"></script> -->
   </head>
 
   <body>
@@ -81,7 +112,9 @@
           </div>
           <ul>
             <li class="nav special4"><a href="./index.html">Home</a></li>
-            <li class="nav special3"><a href="./vacation.html">Vacations</a></li>
+            <li class="nav special3">
+              <a href="./vacation.html">Vacations</a>
+            </li>
             <li class="nav special4"><a href="!#">Travel Guides</a></li>
             <li class="nav lower special4">
               <a href="!#">Tours and Attractions</a>
@@ -105,6 +138,11 @@
       </div>
 
       <div class="banner">
+        <img
+          class="banner-image"
+          src="./assets/images/vacation_page/banner/vacation_landing_hero_large.jpg"
+          alt="banner"
+        />
         <div class="banner-information">
           <img
             src="./assets/images/header/Badge-Vacations-Gold-Generic.png"
@@ -118,548 +156,632 @@
 
           <p><a href="!#">Photo of: Venice, Italy</a></p>
         </div>
-        <img
-          class="banner-image"
-          src="./assets/images/vacation_page/banner/vacation_landing_hero_large.jpg"
-          alt="banner"
-        />
       </div>
 
-      <div class="line"></div>
+      <div class="body">
+        <div class="line"></div>
 
-      <div class="vacation_rank">
-        <h2 class="title">vacation destination rankings</h2>
-        <p>
-          U.S. News Travel's Best Vacations rankings identify the top
-          destinations by region and vacation type. The categories below make it
-          easy to find the list that suits your needs.
-        </p>
-        <div class="bestPlaces">
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/paris.jpg"
-              alt="Paris"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>World's Best Places to Visit for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+        <div class="vacation_rank">
+          <h2 class="title">vacation destination rankings</h2>
+          <p class="vacation_rank-description">
+            U.S. News Travel's Best Vacations rankings identify the top
+            destinations by region and vacation type. The categories below make
+            it easy to find the list that suits your needs.
+          </p>
+          <div class="bestPlaces">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/paris.jpg"
+                alt="Paris"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>World's Best Places to Visit for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Paris</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>Bora Bora</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>Glacier National Park</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/best2.jpg"
-              alt="USA"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>Best Places to Visit in the USA for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/best2.jpg"
+                alt="USA"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>Best Places to Visit in the USA for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Glacier National Park</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>Maui</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>Grand Canyon National Park</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/euro.jpg"
-              alt="Europe"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>Best Places to Visit in Europe for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/euro.jpg"
+                alt="Europe"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>Best Places to Visit in Europe for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Paris</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>Rome</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>Swiss Alps</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/carribean.jpg"
-              alt="Caribbean"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>Best Places to Visit in the Caribbean for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/carribean.jpg"
+                alt="Caribbean"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>Best Places to Visit in the Caribbean for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Turks & Caicos</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>St. Lucia</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>British Virgin Islands</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/best5.jpg"
-              alt="Canada"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>Best Places to Visit in Canada for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/best5.jpg"
+                alt="Canada"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>Best Places to Visit in Canada for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Banff</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>Jasper National Park</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>Vancouver, Canada</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="bestPlaces-detail">
-            <img
-              src="./assets/images/vacation_page/bestPlaces/mexico.jpg"
-              alt="Mexico"
-            />
-            <div class="bestPlaces-detail-best">
-              <h3>Best Places to Visit in Mexico for 2023</h3>
-              <a href="!#"
-                ><div class="suggestion">
+            <div class="bestPlaces-detail">
+              <img
+                class="bestPlaces-detail-image"
+                src="./assets/images/vacation_page/bestPlaces/mexico.jpg"
+                alt="Mexico"
+              />
+              <div class="bestPlaces-detail-best">
+                <h3>Best Places to Visit in Mexico for 2023</h3>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#1</span>
                   <p>Zihuatanejo</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#2</span>
                   <p>Tulum</p>
-                </div>
-              </a>
-              <a href="!#"
-                ><div class="suggestion">
+                </a>
+                <a href="!#">
                   <img
                     src="./assets/images/header/mini-badge-color.png"
                     alt="gold badge"
                   />
                   <span>#3</span>
                   <p>Cozumel</p>
-                </div>
-              </a>
+                </a>
 
-              <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+                <a class="rank_list" href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="line"></div>
+        <div class="line"></div>
 
-      <div class="category">
-        <h2 class="title">Vacations by category</h2>
-      </div>
-      <div class="family">
-        <h3 class="subTitle">Family Vacations</h3>
-        <div class="category-body">
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/family/beach.jpg" alt="beach" />
-              <div class="word">Best Family Beach Vacations in the U.S.</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/family/USA.jpg" alt="USA" />
-              <div class="word">Best Family Vacations in the USA</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/family/caribbean.jpg" alt="caribbean" />
-              <div class="word">Best Family Vacations in the Caribbean</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/family/euro.jpg" alt="Europe" />
-              <div class="word">Best Family Vacations in Europe</div>
-            </div></a
-          >
+        <div class="category">
+          <h2 class="title">Vacations by category</h2>
         </div>
-      </div>
-
-      <div class="cheap">
-        <h3 class="subTitle">Cheap Vacations</h3>
-        <div class="category-body">
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/cheap/family.jpg" alt="family" />
-              <div class="word">Top 20 Cheap Family Vacations</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/cheap/spring.jpg" alt="Spring" />
-              <div class="word">Best Cheap Spring Break Trips</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/cheap/us.jpg" alt="USA" />
-              <div class="word">Best Cheap Vacations in the U.S. for 2023</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="example">
-              <img src="./assets/images/vacation_page/category/cheap/caribbean.jpg" alt="Caribbean" />
-              <div class="word">Best Cheap Caribbean Vacations</div>
-            </div></a
-          >
-        </div>
-      </div>
-
-      <div class="beach">
-        <h3 class="subTitle">Beach Vacations</h3>
-        <div class="description">
-        <div class="description-main">
-          <div class="description-main-word">
-            <h3>Best Beaches in the World for 2023</h3>
-            <ul>
-              <a href="!#"><li>#1 <span>Fiji</span></li></a>
-              <a href="!#"><li>#2 <span>Bora Bora</span></li></a>
-              <a href="!#"><li>#3 <span>Turks & Caicos</span></li></a>
-            </ul>
+        <div class="family">
+          <h3 class="subTitle">Family Vacations</h3>
+          <div class="category-body">
             <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
-          </div>
-          <a href="!#"><img src="./assets/images/vacation_page/category/beach_vacation.jpg" alt="beach"></a>
-        </div>
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/family/beach.jpg"
+                  alt="beach"
+                />
+                <div class="word">Best Family Beach Vacations in the U.S.</div>
+              </div></a
+            >
 
-        <div class="description-more">
-          <h4>More Beach Vacations</h4>
-          <div class="description-more-description">
-            <ul class="left">
-              <a href="!#"><li>Best Pacific Islands</li></a>
-              <a href="!#"><li>Best Beaches in the U.S. for 2023</li></a>
-              <a href="!#"><li>Best Family Beach Vacations in the U.S.</li></a>
-              <a href="!#"><li>Best Beaches in Florida for 2023</li></a>
-              <a href="!#"><li>Best Beaches in California for 2023</li></a>
-              <a href="!#"><li>Best New Jersey Beaches</li></a>
-            </ul>
-
-            <ul class="right">
-              <a href="!#"><li>Best Cape Cod Beaches</li></a>
-              <a href="!#"><li>Best South Carolina Beaches for 2023</li></a>
-              <a href="!#"><li>Best North Carolina Beaches</li></a>
-              <a href="!#"><li>Best Beaches in Texas</li></a>
-              <a href="!#"><li>Best Alabama Beaches</li></a>
-              <a href="!#"><li>Best Oregon Beaches</li></a>
-              <a href="!#"><li>Best Rhode Island Beaches</li></a>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="season">
-        <h3 class="subTitle">Vacations by Season</h3>
-        <div class="category-body">
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/season/spring.jpg" alt="spring break" />
-              <div class="word">Best Spring Break Destinations</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/season/spring_place.jpg" alt="Spring" />
-              <div class="word">Best Places to Visit in Spring</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/season/summer.jpg" alt="summer" />
-              <div class="word">Best Summer Vacation Spots for 2023</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/season/fall.jpg" alt="Fall" />
-              <div class="word">Best Fall Vacations for 2023</div>
-            </div></a
-          >
-        </div>
-      </div>
-
-      <div class="month">
-        <h3 class="subTitle">Vacations by Month</h3>
-        <div class="category-body">
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/month/january.jpg" alt="january break" />
-              <div class="word">Best Places to Visit in January</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/month/february.jpg" alt="february" />
-              <div class="word">Best Places to Visit in February</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/month/march.jpg" alt="March" />
-              <div class="word">Best Places to Visit in March</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/month/april.jpg" alt="April" />
-              <div class="word">Best Places to Visit in April</div>
-            </div></a
-          >
-        </div>
-      </div>
-
-      <div class="honeymoon">
-        <h3 class="subTitle">Romantic & Honeymoon Vacations</h3>
-        <div class="description">
-        <div class="description-main">
-          <div class="description-main-word">
-            <h3>Best Honeymoon Destinations</h3>
-            <ul>
-              <a href="!#"><li>#1 <span>Bora Bora</span></li></a>
-              <a href="!#"><li>#2 <span>Kaua'i</span></li></a>
-              <a href="!#"><li>#3 <span>St. Lucia</span></li></a>
-            </ul>
             <a href="!#"
-                >See Full Ranking List <i class="fa-solid fa-angles-right"></i
-              ></a>
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/family/USA.jpg"
+                  alt="USA"
+                />
+                <div class="word">Best Family Vacations in the USA</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/family/caribbean.jpg"
+                  alt="caribbean"
+                />
+                <div class="word">Best Family Vacations in the Caribbean</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/family/euro.jpg"
+                  alt="Europe"
+                />
+                <div class="word">Best Family Vacations in Europe</div>
+              </div></a
+            >
           </div>
-          <a href="!#"><img src="./assets/images/vacation_page/category/beach_vacation.jpg" alt="beach"></a>
         </div>
 
-        <div class="description-more">
-          <h4>More Romantic & Honeymoon Vacations</h4>
-          <div class="description-more-description">
-            <ul class="left">
-              <a href="!#"><li>Best Romantic Getaways in the USA</li></a>
-              <a href="!#"><li>Best Cheap Honeymoons in the U.S.</li></a>
-              <a href="!#"><li>Best Honeymoon Destinations</li></a>
-              <a href="!#"><li>Best Beach Honeymoon Destinations</li></a>
-              <a href="!#"><li>Best Caribbean Honeymoons</li></a>
-              <a href="!#"><li>Best Honeymoons in Europe</li></a>
-              <a href="!#"><li>Best Cheap European Honeymoon Destinations</li></a>
-            </ul>
+        <div class="cheap">
+          <h3 class="subTitle">Cheap Vacations</h3>
+          <div class="category-body">
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/cheap/family.jpg"
+                  alt="family"
+                />
+                <div class="word">Top 20 Cheap Family Vacations</div>
+              </div></a
+            >
 
-            <ul class="right">
-              <a href="!#"><li>Best Wine Vacations</li></a>
-              <a href="!#"><li>Best Cheap Destination Wedding Locations</li></a>
-              <a href="!#"><li>Best Cheap Romantic Getaways</li></a>
-              <a href="!#"><li>Best Destination Wedding Spots in the Caribbean</li></a>
-              <a href="!#"><li>Best Destination Wedding Spots in Europe</li></a>
-              <a href="!#"><li>Best Honeymoon Destinations in the USA</li></a>
-            </ul>
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/cheap/spring.jpg"
+                  alt="Spring"
+                />
+                <div class="word">Best Cheap Spring Break Trips</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/cheap/us.jpg"
+                  alt="USA"
+                />
+                <div class="word">
+                  Best Cheap Vacations in the U.S. for 2023
+                </div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="example">
+                <img
+                  src="./assets/images/vacation_page/category/cheap/caribbean.jpg"
+                  alt="Caribbean"
+                />
+                <div class="word">Best Cheap Caribbean Vacations</div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <div class="beach">
+          <h3 class="subTitle">Beach Vacations</h3>
+          <div class="description">
+            <div class="description-main">
+              <div class="description-main-word">
+                <h3>Best Beaches in the World for 2023</h3>
+                <ul>
+                  <a href="!#"
+                    ><li>#1 <span>Fiji</span></li></a
+                  >
+                  <a href="!#"
+                    ><li>#2 <span>Bora Bora</span></li></a
+                  >
+                  <a href="!#"
+                    ><li>#3 <span>Turks & Caicos</span></li></a
+                  >
+                </ul>
+                <a href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
+              <a href="!#"
+                ><img
+                  src="./assets/images/vacation_page/category/beach_vacation.jpg"
+                  alt="beach"
+              /></a>
+            </div>
+
+            <div class="description-more">
+              <h4>More Beach Vacations</h4>
+              <div class="description-more-description">
+                <ul class="left">
+                  <a href="!#"><li>Best Pacific Islands</li></a>
+                  <a href="!#"><li>Best Beaches in the U.S. for 2023</li></a>
+                  <a href="!#"
+                    ><li>Best Family Beach Vacations in the U.S.</li></a
+                  >
+                  <a href="!#"><li>Best Beaches in Florida for 2023</li></a>
+                  <a href="!#"><li>Best Beaches in California for 2023</li></a>
+                  <a href="!#"><li>Best New Jersey Beaches</li></a>
+                </ul>
+
+                <ul class="right">
+                  <a href="!#"><li>Best Cape Cod Beaches</li></a>
+                  <a href="!#"><li>Best South Carolina Beaches for 2023</li></a>
+                  <a href="!#"><li>Best North Carolina Beaches</li></a>
+                  <a href="!#"><li>Best Beaches in Texas</li></a>
+                  <a href="!#"><li>Best Alabama Beaches</li></a>
+                  <a href="!#"><li>Best Oregon Beaches</li></a>
+                  <a href="!#"><li>Best Rhode Island Beaches</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="season">
+          <h3 class="subTitle">Vacations by Season</h3>
+          <div class="category-body">
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/season/spring.jpg"
+                  alt="spring break"
+                />
+                <div class="word">Best Spring Break Destinations</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/season/spring_place.jpg"
+                  alt="Spring"
+                />
+                <div class="word">Best Places to Visit in Spring</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/season/summer.jpg"
+                  alt="summer"
+                />
+                <div class="word">Best Summer Vacation Spots for 2023</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/season/fall.jpg"
+                  alt="Fall"
+                />
+                <div class="word">Best Fall Vacations for 2023</div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <div class="month">
+          <h3 class="subTitle">Vacations by Month</h3>
+          <div class="category-body">
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/month/january.jpg"
+                  alt="january break"
+                />
+                <div class="word">Best Places to Visit in January</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/month/february.jpg"
+                  alt="february"
+                />
+                <div class="word">Best Places to Visit in February</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/month/march.jpg"
+                  alt="March"
+                />
+                <div class="word">Best Places to Visit in March</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/month/april.jpg"
+                  alt="April"
+                />
+                <div class="word">Best Places to Visit in April</div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <div class="honeymoon">
+          <h3 class="subTitle">Romantic & Honeymoon Vacations</h3>
+          <div class="description">
+            <div class="description-main">
+              <div class="description-main-word">
+                <h3>Best Honeymoon Destinations</h3>
+                <ul>
+                  <a href="!#"
+                    ><li>#1 <span>Bora Bora</span></li></a
+                  >
+                  <a href="!#"
+                    ><li>#2 <span>Kaua'i</span></li></a
+                  >
+                  <a href="!#"
+                    ><li>#3 <span>St. Lucia</span></li></a
+                  >
+                </ul>
+                <a href="!#"
+                  >See Full Ranking List <i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
+              <a href="!#"
+                ><img
+                  src="./assets/images/vacation_page/category/beach_vacation.jpg"
+                  alt="beach"
+              /></a>
+            </div>
+
+            <div class="description-more">
+              <h4>More Romantic & Honeymoon Vacations</h4>
+              <div class="description-more-description">
+                <ul class="left">
+                  <a href="!#"><li>Best Romantic Getaways in the USA</li></a>
+                  <a href="!#"><li>Best Cheap Honeymoons in the U.S.</li></a>
+                  <a href="!#"><li>Best Honeymoon Destinations</li></a>
+                  <a href="!#"><li>Best Beach Honeymoon Destinations</li></a>
+                  <a href="!#"><li>Best Caribbean Honeymoons</li></a>
+                  <a href="!#"><li>Best Honeymoons in Europe</li></a>
+                  <a href="!#"
+                    ><li>Best Cheap European Honeymoon Destinations</li></a
+                  >
+                </ul>
+
+                <ul class="right">
+                  <a href="!#"><li>Best Wine Vacations</li></a>
+                  <a href="!#"
+                    ><li>Best Cheap Destination Wedding Locations</li></a
+                  >
+                  <a href="!#"><li>Best Cheap Romantic Getaways</li></a>
+                  <a href="!#"
+                    ><li>Best Destination Wedding Spots in the Caribbean</li></a
+                  >
+                  <a href="!#"
+                    ><li>Best Destination Wedding Spots in Europe</li></a
+                  >
+                  <a href="!#"
+                    ><li>Best Honeymoon Destinations in the USA</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more">
+          <h3 class="subTitle">More Vacations</h3>
+          <div class="category-body">
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/more/park.jpg"
+                  alt="park break"
+                />
+                <div class="word">
+                  Best National Parks in the World for 2023
+                </div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/more/weekend.jpg"
+                  alt="weekend"
+                />
+                <div class="word">Best Weekend Getaways for 2023</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/more/island.jpg"
+                  alt="Island"
+                />
+                <div class="word">Best Islands in the World for 2024</div>
+              </div></a
+            >
+
+            <a href="!#"
+              ><div class="category-body-image">
+                <img
+                  src="./assets/images/vacation_page/category/more/christmas.jpg"
+                  alt="Christmas"
+                />
+                <div class="word">Best Christmas Vacations</div>
+              </div></a
+            >
           </div>
         </div>
       </div>
-      </div>
-
-      <div class="more">
-        <h3 class="subTitle">More Vacations</h3>
-        <div class="category-body">
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/more/park.jpg" alt="park break" />
-              <div class="word">Best National Parks in the World for 2023</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/more/weekend.jpg" alt="weekend" />
-              <div class="word">Best Weekend Getaways for 2023</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/more/island.jpg" alt="Island" />
-              <div class="word">Best Islands in the World for 2024</div>
-            </div></a
-          >
-
-          <a href="!#"
-            ><div class="category-body-image">
-              <img src="./assets/images/vacation_page/category/more/christmas.jpg" alt="Christmas" />
-              <div class="word">Best Christmas Vacations</div>
-            </div></a
-          >
-        </div>
-      </div>
-
-
     </div>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        stagePadding: 50,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          740: {
+            items: 3,
+          },
+          1024: {
+            items: 4,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

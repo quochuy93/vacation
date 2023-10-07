@@ -3,6 +3,7 @@
     &-image {
         width: 100%;
         height: 55rem;
+        object-fit: cover;
     }
 
     &-information {
@@ -67,6 +68,85 @@
                 font-size: 1.4rem;
                 span {
                     font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.vacation{
+    .banner{
+        &-information {
+            padding: 0 33rem;
+            h3{
+                padding-bottom: 5rem;
+            }
+        }
+    }
+    .body{padding: 0 16rem;
+
+    }
+    .vacation_rank{
+        &-description{padding: 2rem 20rem 2rem 0rem;
+            font-size: 2rem;
+        }
+        .bestPlaces{display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            &-detail{
+                border: 0.5px solid rgba(0, 0, 0, 0.15);
+                padding: 0 0 2rem 0;
+                border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                &-image{width: 100%;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    &:hover {
+                        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+                    }
+                }
+                &-best{padding: 2rem 2rem 0rem 1rem;
+                    flex: 3;
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        text-transform: capitalize;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        margin-bottom: 2rem;
+                    }
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        color: black;
+                        img {
+                            height: 2.2rem;
+                        }
+                        span {
+                            padding: 0 1rem;
+                            font-weight: 600;
+                        }
+                        p {
+                            font-size: 1.7rem;
+                        }
+                    }
+                    .rank_list {
+                        color: #1263d3;
+                        font-weight: 600;
+                        line-height: 1.4rem;
+                        font-size: 1.4rem;
+                        text-transform: uppercase;
+                        i {
+                            font-size: 0.9rem;
+                            line-height: 1.7rem;
+                            padding-left: 5px;
+                        }
+                    }
+
                 }
             }
         }
