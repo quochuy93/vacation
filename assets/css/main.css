@@ -1597,3 +1597,198 @@ body {
 .home .footer-symbol i {
   color: #fafafa;
 }
+
+.signIn {
+  height: 100vh;
+  width: 100%;
+  background-color: #909090;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.signIn .main {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  margin: 0 auto;
+  display: block;
+  width: 70rem;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(43, 43, 43, 0.2117647059), 0px 0px 2px 2px rgba(43, 43, 43, 0.2117647059), 0px 0px 3px 3px rgba(43, 43, 43, 0.2117647059), 0px 0px 4px 4px rgba(43, 43, 43, 0.2117647059);
+          box-shadow: 0px 0px 5px 5px rgba(43, 43, 43, 0.2117647059), 0px 0px 2px 2px rgba(43, 43, 43, 0.2117647059), 0px 0px 3px 3px rgba(43, 43, 43, 0.2117647059), 0px 0px 4px 4px rgba(43, 43, 43, 0.2117647059);
+  position: relative;
+}
+.signIn .main .image {
+  width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 0px 0px 8px 1px #888888;
+          box-shadow: 0px 0px 8px 1px #888888;
+}
+.signIn .main-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.signIn .main-detail .guide {
+  line-height: 1.7rem;
+  font-size: 1.7rem;
+}
+.signIn .main-detail a:hover {
+  text-decoration: underline;
+}
+.signIn .main-detail-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+.signIn .main-detail-left span {
+  width: 4rem;
+  background-color: transparent;
+}
+.signIn .main-detail-left .social-logo {
+  width: 2rem;
+}
+.signIn .main-detail-left .detail {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  padding-top: 1rem;
+}
+.signIn .main-detail-left .apple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.15rem 0.25rem;
+  border-radius: 3px;
+  height: 4rem;
+}
+.signIn .main-detail-left .apple:hover {
+  color: #ccc;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.signIn .main-detail-left .google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #4285f4;
+  color: #fff;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.15rem 0.25rem;
+  border-radius: 3px;
+  height: 4rem;
+}
+.signIn .main-detail-left .google .social-logo {
+  background-color: #fff;
+  height: 3.5rem;
+  width: 4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+.signIn .main-detail-left .google:hover {
+  background-color: #3f7ce8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.signIn .main-detail-left .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #4267b2;
+  color: #fff;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.15rem 0.25rem;
+  border-radius: 3px;
+  height: 4rem;
+}
+.signIn .main-detail-left .facebook .social-logo {
+  height: 3rem;
+  width: 3.5rem;
+  border-radius: 3px;
+}
+.signIn .main-detail-left .facebook:hover {
+  background-color: #2955ad;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.signIn .main-detail-left .description {
+  font-size: 1.1rem;
+}
+.signIn .main-detail-right {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 3px solid rgba(243, 241, 241, 0.782);
+  padding-left: 2rem;
+}
+.signIn .main-detail-right .or {
+  position: absolute;
+  left: 49%;
+  top: 50%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  width: 2rem;
+  height: 7rem;
+  background-color: #fff;
+  line-height: 7rem;
+  text-align: center;
+}
+.signIn .main-detail-right .body .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.signIn .main-detail-right .body .login-word {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.signIn .main-detail-right .body .login-box {
+  height: 4rem;
+  border-radius: 3px;
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+}
+.signIn .main-detail-right .body .login-btn {
+  height: 4.5rem;
+  background-color: #c4212a;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 3px;
+  margin-top: 2rem;
+}
+.signIn .main-detail-right .body .login-btn:hover {
+  background-color: #a61c1e;
+}
+.signIn .main-detail-right .body .login-information {
+  margin: 1rem auto;
+}
