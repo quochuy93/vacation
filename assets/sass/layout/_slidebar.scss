@@ -74,6 +74,17 @@
     }
 }
 
+.vacation{
+    .banner {
+        &-information {
+            padding: 0 33rem;
+            h3 {
+                padding-bottom: 5rem;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 46.1875em) {
     .banner {
         position: relative;
@@ -81,7 +92,7 @@
 
         &-image {
             object-fit: fill;
-            height: 45rem;
+            height: 40rem;
         }
 
         &-information {
@@ -113,6 +124,13 @@
 
             p {
                 padding-top: 2rem;
+            }
+        }
+    }
+    .vacation{
+        .banner {
+            &-information {
+                padding: 0 10rem;
             }
         }
     }

@@ -404,6 +404,13 @@ body {
   font-weight: 600;
 }
 
+.vacation .banner-information {
+  padding: 0 33rem;
+}
+.vacation .banner-information h3 {
+  padding-bottom: 5rem;
+}
+
 @media screen and (max-width: 46.1875em) {
   .banner {
     position: relative;
@@ -412,7 +419,7 @@ body {
   .banner-image {
     -o-object-fit: fill;
        object-fit: fill;
-    height: 45rem;
+    height: 40rem;
   }
   .banner-information {
     padding: 0 5rem;
@@ -438,6 +445,9 @@ body {
   }
   .banner-information p {
     padding-top: 2rem;
+  }
+  .vacation .banner-information {
+    padding: 0 10rem;
   }
 }
 .footer {
@@ -1306,15 +1316,12 @@ body {
   margin: 1rem auto;
 }
 
-.vacation .banner-information {
-  padding: 0 33rem;
-}
-.vacation .banner-information h3 {
-  padding-bottom: 5rem;
-}
 .vacation .body {
   padding: 0 16rem;
   padding-bottom: 5rem;
+}
+.vacation .body .top-title {
+  display: none;
 }
 .vacation .body .vacation_rank-description {
   padding: 2rem 20rem 2rem 0rem;
@@ -1634,6 +1641,9 @@ body {
   -webkit-box-flex: 1.1;
       -ms-flex: 1.1;
           flex: 1.1;
+}
+.vacation .body .beach_mobile {
+  display: none;
 }
 .vacation .body .season .owl-carousel {
   position: relative;
@@ -2064,4 +2074,329 @@ body {
 }
 .vacation .footer-symbol i {
   color: #fafafa;
+}
+
+@media screen and (max-width: 46.1875em) {
+  .vacation .body {
+    padding: 0 3rem;
+    padding-bottom: 5rem;
+  }
+  .vacation .body .top-title {
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .vacation .body .vacation_rank-description {
+    padding: 2rem 5rem 2rem 0rem;
+  }
+  .vacation .body .vacation_rank .bestPlaces {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .vacation .body .cheap .owl-carousel .example .word {
+    font-size: 1.7rem;
+    height: 7rem;
+  }
+  .vacation .body .beach {
+    display: none;
+  }
+  .vacation .body .beach_mobile {
+    display: block;
+  }
+  .vacation .body .beach_mobile-detail {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    padding: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .vacation .body .beach_mobile-detail-image {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .vacation .body .beach_mobile-detail-image:hover {
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .vacation .body .beach_mobile-detail-best {
+    padding: 2rem 2rem 2rem 1rem;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    background-color: #3f4451;
+    color: #e4e7eb;
+  }
+  .vacation .body .beach_mobile-detail-best h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .vacation .body .beach_mobile-detail-best a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #e4e7eb;
+  }
+  .vacation .body .beach_mobile-detail-best a img {
+    height: 2.2rem;
+  }
+  .vacation .body .beach_mobile-detail-best a span {
+    padding: 0 1rem;
+    font-weight: 600;
+  }
+  .vacation .body .beach_mobile-detail-best a p {
+    font-size: 1.7rem;
+  }
+  .vacation .body .beach_mobile-detail-best .rank_list {
+    color: #e4e7eb;
+    font-weight: 600;
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .vacation .body .beach_mobile-detail-best .rank_list i {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    padding-left: 5px;
+  }
+  .vacation .body .beach_mobile-more h4 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  .vacation .body .beach_mobile-more-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+  .vacation .body .beach_mobile-more-description a {
+    color: black;
+    font-size: 300;
+  }
+  .vacation .body .beach_mobile-more-description .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 2.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .vacation .body .beach_mobile-more-description .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 2.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .vacation .body .season .owl-carousel {
+    position: relative;
+  }
+  .vacation .body .season .owl-carousel .example {
+    margin-top: 1rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .vacation .body .season .owl-carousel .example:hover {
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .vacation .body .season .owl-carousel .example img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 17rem;
+  }
+  .vacation .body .season .owl-carousel .example .word {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    height: 7rem;
+  }
+  .vacation .body .season .owl-carousel .owl-nav {
+    font-size: 7rem;
+    color: white;
+    line-height: 7rem;
+  }
+  .vacation .body .season .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 6rem;
+    left: 0.5rem;
+    z-index: 10;
+  }
+  .vacation .body .season .owl-carousel .owl-nav .owl-prev:hover {
+    background-color: transparent;
+  }
+  .vacation .body .season .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 6rem;
+    right: 0.5rem;
+    z-index: 10;
+  }
+  .vacation .body .season .owl-carousel .owl-nav .owl-next:hover {
+    background-color: transparent;
+  }
+  .vacation .body .month .owl-carousel {
+    position: relative;
+  }
+  .vacation .body .month .owl-carousel .example {
+    margin-top: 1rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .vacation .body .month .owl-carousel .example:hover {
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .vacation .body .month .owl-carousel .example img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 17rem;
+  }
+  .vacation .body .month .owl-carousel .example .word {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    height: 7rem;
+  }
+  .vacation .body .month .owl-carousel .owl-nav {
+    font-size: 7rem;
+    color: white;
+    line-height: 7rem;
+  }
+  .vacation .body .month .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 6rem;
+    left: 0.5rem;
+    z-index: 10;
+  }
+  .vacation .body .month .owl-carousel .owl-nav .owl-prev:hover {
+    background-color: transparent;
+  }
+  .vacation .body .month .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 6rem;
+    right: 0.5rem;
+    z-index: 10;
+  }
+  .vacation .body .month .owl-carousel .owl-nav .owl-next:hover {
+    background-color: transparent;
+  }
+  .vacation .body .honeymoon {
+    display: none;
+  }
+  .vacation .bottom {
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    line-height: 2.5rem;
+  }
+  .vacation .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .vacation .link-detail {
+    padding-bottom: 1rem;
+  }
+  .vacation .link-detail ul {
+    display: none;
+  }
+  .vacation .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 5rem;
+  }
+  .vacation .footer-information {
+    margin-top: 4rem;
+    padding-right: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 2rem;
+  }
+  .vacation .footer-information-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 0.7rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
