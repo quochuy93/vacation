@@ -89,7 +89,6 @@
                 cursor: pointer;
             }
         }
-        
 
         .special6 {
             button {
@@ -149,9 +148,22 @@
         color: white;
     }
 
-    #home > div.navbar > div.right > div:nth-child(3):hover{
-        .table{
+    #home > div.navbar > div.right > div:nth-child(3):hover {
+        .table {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 46.1875em) {
+    .navbar {
+        .left {
+            ul {
+                display: none;
+            }
+        }
+        .table {
+            width: 25rem;
         }
     }
 }
