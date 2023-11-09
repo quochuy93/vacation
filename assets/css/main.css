@@ -1242,6 +1242,7 @@ body {
   padding: 0.15rem 0.25rem;
   border-radius: 3px;
   height: 4rem;
+  width: 100%;
 }
 .signIn .main-detail-left .facebook .social-logo {
   height: 3rem;
@@ -1316,6 +1317,45 @@ body {
   margin: 1rem auto;
 }
 
+@media screen and (max-width: 46.1875em) {
+  .signIn {
+    padding: 1rem 0;
+  }
+  .signIn .main {
+    width: 35rem;
+    padding-top: 2rem;
+    padding: 2rem 2rem;
+  }
+  .signIn .main-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .signIn .main-detail-left {
+    gap: 1rem;
+    padding-right: 0;
+  }
+  .signIn .main-detail-left .description {
+    font-size: 1.2rem;
+  }
+  .signIn .main-detail-right {
+    border-top: 3px solid rgba(243, 241, 241, 0.782);
+    border-left: none;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  .signIn .main-detail-right .or {
+    left: 44%;
+    top: 47%;
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+}
 .vacation .body {
   padding: 0 16rem;
   padding-bottom: 5rem;
