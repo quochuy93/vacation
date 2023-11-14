@@ -79,7 +79,56 @@
         &-information {
             padding: 0 33rem;
             h3 {
-                padding-bottom: 5rem;
+                padding-bottom: 2rem;
+            }
+            p {
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 66.5em) and (min-width: 46.25em) {
+    .banner {
+        
+        &-image {
+            height: 48rem;
+            position: relative;
+            width: 100%;
+        }
+    
+        &-information {
+            padding: 0 18rem;
+            h1 {
+                font-size: 5rem;
+            }
+    
+            h3 {
+                font-size: 1.8rem;
+            }
+    
+            .banner-information-search {
+                .space {
+                    width: 40rem;
+                    height: 4rem;
+                }
+                .search {
+                    width: 8rem;
+                    height: 4rem;
+                    line-height: 2rem;
+                }
+            }
+    
+            p {
+                padding-top: 3rem;
+            }
+        }
+    }
+
+    .vacation{
+        .banner {
+            &-information {
+                padding: 0 10rem;
             }
         }
     }
@@ -131,6 +180,9 @@
         .banner {
             &-information {
                 padding: 0 10rem;
+            }
+            p {
+                padding-top: 1rem;
             }
         }
     }

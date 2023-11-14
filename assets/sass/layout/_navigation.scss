@@ -155,6 +155,19 @@
     }
 }
 
+@media screen and (max-width: 66.5em) and (min-width: 46.25em) {
+    .navbar {
+        .left {
+            ul {
+                display: none;
+            }
+        }
+        .table {
+            width: 25rem;
+        }
+    }
+}
+
 @media screen and (max-width: 46.1875em) {
     .navbar {
         .left {
