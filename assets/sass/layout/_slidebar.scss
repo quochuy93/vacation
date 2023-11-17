@@ -88,6 +88,23 @@
     }
 }
 
+.reward{
+    .banner {
+        &-information {
+            padding: 0;
+            h1{
+                font-size: 5rem;
+                padding: 0 25rem;
+            }
+            h3 {
+                margin-bottom: 7rem;
+                margin-top: 5rem;
+                padding: 0 35rem;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 66.5em) and (min-width: 46.25em) {
     .banner {
         
