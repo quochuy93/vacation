@@ -430,6 +430,9 @@ body {
 .reward .banner-information {
   padding: 0;
 }
+.reward .banner-information img {
+  width: 15rem;
+}
 .reward .banner-information h1 {
   font-size: 5rem;
   padding: 0 25rem;
@@ -469,6 +472,19 @@ body {
   }
   .vacation .banner-information {
     padding: 0 10rem;
+  }
+  .reward .banner-information {
+    padding: 0;
+  }
+  .reward .banner-information h1 {
+    font-size: 4.5rem;
+    padding: 0 12rem;
+    margin-top: 2rem;
+  }
+  .reward .banner-information h3 {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    padding: 0 20rem;
   }
 }
 @media screen and (max-width: 46.1875em) {
@@ -511,6 +527,19 @@ body {
   }
   .vacation .banner p {
     padding-top: 1rem;
+  }
+  .reward .banner-information {
+    padding: 0;
+  }
+  .reward .banner-information h1 {
+    font-size: 3.5rem;
+    padding: 0 7rem;
+    margin-top: 2rem;
+  }
+  .reward .banner-information h3 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding: 0 5rem;
   }
 }
 .bottom {
@@ -2758,7 +2787,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 35rem;
+  min-height: 35rem;
   margin-top: 3rem;
   -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -2841,14 +2870,17 @@ body {
           flex: 3;
 }
 .reward .body .main-program .description-image img {
-  height: inherit;
+  height: 100%;
+  width: 100%;
 }
 .reward .body .main-cc_guide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
-  gap: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .reward .body .main-cc_guide-detail {
   border: 0.5px solid rgba(0, 0, 0, 0.15);
@@ -2867,15 +2899,16 @@ body {
   height: 17rem;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 .reward .body .main-cc_guide-detail .word {
   text-align: center;
   color: black;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 2.5rem;
   padding: 1rem 2rem 2rem 2rem;
-  height: 7rem;
+  min-height: 6rem;
 }
 .reward .body .advice {
   -webkit-box-flex: 1;
@@ -2925,10 +2958,65 @@ body {
 .reward .body .advice-list {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #1263D3;
+  color: #1263d3;
 }
 .reward .body .advice-list:hover {
   color: #00206b;
   -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 66.5em) and (min-width: 46.25em) {
+  .reward .body {
+    padding: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .reward .body .main-program .description-image img {
+    width: 100%;
+  }
+  .reward .body .main-cc_guide {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reward .body .main-cc_guide-detail img {
+    width: 100%;
+  }
+  .reward .body .main-cc_guide-detail .word {
+    min-height: 6rem;
+  }
+}
+@media screen and (max-width: 46.1875em) {
+  .reward .body {
+    padding: 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .reward .body .main-program .description-image img {
+    width: 100%;
+  }
+  .reward .body .main-cc_guide {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reward .body .main-cc_guide-detail img {
+    width: 100%;
+  }
+  .reward .body .main-cc_guide-detail .word {
+    min-height: 6rem;
+  }
 }
