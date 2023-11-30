@@ -3150,6 +3150,24 @@ body {
       -ms-flex: 2;
           flex: 2;
 }
+.zoos .content .main .btn_left {
+  background-color: rgba(170, 170, 170, 0.9);
+  color: #515767;
+}
+.zoos .content .main .btn_left:hover {
+  cursor: not-allowed;
+}
+.zoos .content .main .btn_right {
+  background-color: #1263d3;
+  color: white;
+}
+.zoos .content .main .btn_right:hover {
+  background-color: #00206b;
+  -webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(17, 90, 191) 0px 0px 0px 3px;
+          box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(17, 90, 191) 0px 0px 0px 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .zoos .content .main .decoration-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3176,24 +3194,6 @@ body {
   border-radius: 5px;
   font-size: 3rem;
   font-weight: 600;
-}
-.zoos .content .main .decoration-top .top-btn .btn_left {
-  background-color: rgba(170, 170, 170, 0.9);
-  color: #515767;
-}
-.zoos .content .main .decoration-top .top-btn .btn_left:hover {
-  cursor: not-allowed;
-}
-.zoos .content .main .decoration-top .top-btn .btn_right {
-  background-color: #1263d3;
-  color: white;
-}
-.zoos .content .main .decoration-top .top-btn .btn_right:hover {
-  background-color: #00206b;
-  -webkit-box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(17, 90, 191) 0px 0px 0px 3px;
-          box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgb(17, 90, 191) 0px 0px 0px 3px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 .zoos .content .main .decoration-image {
   position: relative;
@@ -3236,7 +3236,7 @@ body {
   padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   -webkit-box-shadow: #515767 0px 0px 2px 0px;
           box-shadow: #515767 0px 0px 2px 0px;
 }
@@ -3246,7 +3246,200 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.zoos .content .main .article-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.zoos .content .main .article-part1 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+.zoos .content .main .article-part1 a {
+  color: #1263d3;
+}
+.zoos .content .main .article-part1 a:hover {
+  color: #00206b;
+}
+.zoos .content .main .article-part2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+.zoos .content .main .article-part2 a {
+  color: #1263d3;
+}
+.zoos .content .main .article-part2 a:hover {
+  color: #00206b;
+}
+.zoos .content .main .info-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.zoos .content .main .info-next span {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #515767;
+}
+.zoos .content .main .info-next a {
+  color: rgb(18, 99, 211);
+}
+.zoos .content .main .info-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 3rem;
+}
+.zoos .content .main .info-btn .btn_info {
+  padding: 1rem 2.2rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.zoos .content .main .info-btn .number {
+  line-height: 2rem;
+}
+.zoos .content .main .info-btn .number span {
+  font-weight: 800;
+}
+.zoos .content .main .info-word {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.zoos .content .main .info-word span {
+  font-weight: 600;
+}
 .zoos .content .advice {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.zoos .content .advice .line {
+  margin-top: 4rem;
+}
+.zoos .content .advice-detail {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.zoos .content .advice-detail .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  padding: 1rem 1rem;
+  border: 0.5px solid #e4e4e4;
+}
+.zoos .content .advice-detail .box-word {
+  line-height: 2rem;
+  color: #515767;
+}
+.zoos .content .advice-detail .box-image {
+  height: 7rem;
+  width: 7rem;
+}
+.zoos .content .advice-detail .box:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.zoos .like {
+  padding: 0 16rem;
+  margin-bottom: 5rem;
+}
+.zoos .like-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+.zoos .like-main .items {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.zoos .like-main .items .like-item {
+  border: 0.5px solid #d3d7dc;
+  -webkit-box-shadow: #d3d7dc 0px 0px 1px 0px, #d3d7dc 0px 0px 1px 0px, #d3d7dc 0px 0px 1px 0px;
+          box-shadow: #d3d7dc 0px 0px 1px 0px, #d3d7dc 0px 0px 1px 0px, #d3d7dc 0px 0px 1px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem;
+}
+.zoos .like-main .items .like-item-word {
+  padding: 2rem 1.5rem;
+}
+.zoos .like-main .items .like-item-word .like_title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.zoos .like-main .items .like-item-word .word_description {
+  font-size: 1.4rem;
+}
+.zoos .like-main .items .like-item-word .like_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.zoos .like-main .items .like-item-word .like_information .like_author {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+}
+.zoos .like-main .items .like-item-word .like_information .like_date {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #515767;
+}
+.zoos .like-main .items .like-item-image {
+  width: 27rem;
+}
+.zoos .like-main .items .like-item:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #d3d7dc 0px 0px 3px 1px, #d3d7dc 0px 0px 3px 2px;
+          box-shadow: #d3d7dc 0px 0px 3px 1px, #d3d7dc 0px 0px 3px 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.zoos .like-main .hide {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
