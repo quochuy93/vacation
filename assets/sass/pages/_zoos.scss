@@ -377,3 +377,81 @@
         }
     }
 }
+
+@media screen and (max-width: 66.5em) and (min-width: 46.25em) {
+    .zoos {
+        .headline {
+            padding: 0 5rem;
+        }
+        .content {
+            padding: 0 5rem;
+            .advice {
+                display: none;
+            }
+        }
+        .like {
+            padding: 0 5rem;
+            &-main {
+                .items {
+                    .like-item {
+                        &-image {
+                            width: 20rem;
+                        }
+                    }
+                }
+                .hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 46.1875em) {
+    .zoos {
+        .insurance {
+            &-description {
+                display: none;
+            }
+        }
+        .headline {
+            padding: 0 1rem;
+            margin-top: 1rem;
+            &-title {
+                font-size: 3rem;
+            }
+            &-description {
+                font-size: 1.7rem;
+            }
+        }
+        .content {
+            padding: 0 1rem;
+            .advice {
+                display: none;
+            }
+        }
+        .like {
+            padding: 0 1rem;
+            &-main {
+                .items {
+                    .like-item {
+                        &-word {
+                            .word_description {
+                                display: none;
+                            }
+                            .like_information {
+                                display: none;
+                            }
+                        }
+                        &-image {
+                            width: 15rem;
+                        }
+                    }
+                }
+                .hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -3444,3 +3444,60 @@ body {
       -ms-flex: 1;
           flex: 1;
 }
+
+@media screen and (max-width: 66.5em) and (min-width: 46.25em) {
+  .zoos .headline {
+    padding: 0 5rem;
+  }
+  .zoos .content {
+    padding: 0 5rem;
+  }
+  .zoos .content .advice {
+    display: none;
+  }
+  .zoos .like {
+    padding: 0 5rem;
+  }
+  .zoos .like-main .items .like-item-image {
+    width: 20rem;
+  }
+  .zoos .like-main .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 46.1875em) {
+  .zoos .insurance-description {
+    display: none;
+  }
+  .zoos .headline {
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  .zoos .headline-title {
+    font-size: 3rem;
+  }
+  .zoos .headline-description {
+    font-size: 1.7rem;
+  }
+  .zoos .content {
+    padding: 0 1rem;
+  }
+  .zoos .content .advice {
+    display: none;
+  }
+  .zoos .like {
+    padding: 0 1rem;
+  }
+  .zoos .like-main .items .like-item-word .word_description {
+    display: none;
+  }
+  .zoos .like-main .items .like-item-word .like_information {
+    display: none;
+  }
+  .zoos .like-main .items .like-item-image {
+    width: 15rem;
+  }
+  .zoos .like-main .hide {
+    display: none;
+  }
+}
